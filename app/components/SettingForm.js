@@ -15,6 +15,40 @@ export default function SettingForm() {
             </select>
             <h1 className={styles.headings}>Tooltip text</h1>
             <input type="text" name="" id="" placeholder="Input" className={styles.field1} />
+            <section className={styles.twoInput}>
+                <div className={styles.box}>
+                <h1 className={styles.headings}>Text Size</h1>
+                <input type="number" name="" id="" placeholder="Input" className={styles.field1} />
+                </div>
+                <div className={styles.box}>
+                <h1 className={styles.headings}>Padding</h1>
+                <input type="number" name="" id="" placeholder="Input" className={styles.field1} />
+                </div>
+            </section>
+            <h1 className={styles.headings}>Text Colour</h1>
+            <input type="text" name="" id="" placeholder="Input" className={styles.field1} />
+            <h1 className={styles.headings}>Background colour</h1>
+            <input type="text" name="" id="" placeholder="Input" className={styles.field1} />
+            <section className={styles.twoInput}>
+                <div className={styles.box}>
+                <h1 className={styles.headings}>Corner radius</h1>
+                <input type="number" name="" id="" placeholder="Input" className={styles.field1} />
+                </div>
+                <div className={styles.box}>
+                <h1 className={styles.headings}>Tooltip width</h1>
+                <input type="number" name="" id="" placeholder="Input" className={styles.field1} />
+                </div>
+            </section>
+            <section className={styles.twoInput}>
+                <div className={styles.box}>
+                <h1 className={styles.headings}>Arrow width</h1>
+                <input type="number" name="" id="" placeholder="Input" className={styles.field1} />
+                </div>
+                <div className={styles.box}>
+                <h1 className={styles.headings}>Arrow height</h1>
+                <input type="number" name="" id="" placeholder="Input" className={styles.field1} />
+                </div>
+            </section>
         </main>
     );
 }
