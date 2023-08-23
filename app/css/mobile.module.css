@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    height: 594.56px;
+    border-radius: 28.864px;
+    padding: 1em;
+    background: #2C2C2C;
+    box-shadow: -1.6781489849090576px 0px 4.027557849884033px -2.517223834991455px #212121 inset, 0px -0.8390744924545288px 3.3562979698181152px 0px #212121 inset;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 13em;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: rgb(184,184,184);
+    padding: 1em;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5em;
+}
+
+.buttons{
+    background-color: #ffffff;
+    padding: 0.4em;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 500px){
+    .container{
+        width: 307.4px;
+    }
+}
