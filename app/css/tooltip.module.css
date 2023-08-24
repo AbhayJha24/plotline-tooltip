@@ -1,4 +1,8 @@
 .tooltip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #212121; 
     border-radius: 2px;
     color: #ffffff;
@@ -14,5 +18,4 @@
     content: " ";
     border: 10px solid;
     border-color:  transparent transparent #212121 transparent;
-    transform: rotate(30deg, 30deg);
 }
