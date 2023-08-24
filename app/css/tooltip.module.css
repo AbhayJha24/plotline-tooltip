@@ -15,7 +15,7 @@
     transform: inherit;
 }
 
-.tooltip::after{
+.beak{
     position: absolute;
     content: " ";
     top: -19px;

@@ -7,6 +7,7 @@ import { useRef, useEffect } from "react";
 export default function Tooltip({toolTip}) {
 
     const tooltipelement = useRef(null);
+    const beakelement = useRef(null);
 
     useEffect(() => {
       if(tooltipelement){
@@ -44,11 +45,22 @@ export default function Tooltip({toolTip}) {
             tooltipelement.current.style.transform = 'rotateZ(180deg)';
         }
       }
+
+      if(beakelement){
+        beakelement.current.style.transform = `scaleX(${toolTip.arrowwidth})`;
+        if(toolTip.bgcolour !== ""){
+            beakelement.current.style.borderColor = `transparent transparent ${toolTip.bgcolour} transparent`;
+        }
+        else{
+            beakelement.current.style.borderColor = `transparent transparent #212121 transparent`;
+        }
+      }
     }, [toolTip])
     
     
     return (
         <main className={style.tooltip} ref={tooltipelement}>
+            <div className={style.beak} ref={beakelement}></div>
             <p className={style.text}>{toolTip.tooltiptext}</p>
         </main>
     );

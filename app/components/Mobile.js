@@ -13,7 +13,7 @@ export default function Mobile({toolTip}) {
                 <Tooltip toolTip={toolTip} />
 
                 <div className={styles.buttonContainer}>
-                <button className={styles.buttons} onClick={()=>{console.log("Hi !")}}>Button 1</button>
+                <button className={styles.buttons}>Button 1</button>
                 <button className={styles.buttons}>Button 2</button>
                 </div>
                 <button className={styles.buttons}>Button 3</button>

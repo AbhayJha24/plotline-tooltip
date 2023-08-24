@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default () => {
 
-    const [toolTip, setToolTip] = useState({tooltiptext: "Tooltip text goes here", button: "Button 3", textsize: 16, padding: 10, textcolour: "", bgcolour: "", cradius: 0, tooltipwidth: 190,  arrowwidth: 10, arrowheight: 0});
+    const [toolTip, setToolTip] = useState({tooltiptext: "Tooltip text goes here", button: "Button 3", textsize: 16, padding: 10, textcolour: "", bgcolour: "", cradius: 0, tooltipwidth: 190,  arrowwidth: 1, arrowheight: 0});
 
     function onTextChange(e){
         let text = {tooltiptext : e.target.value};
@@ -56,8 +56,10 @@ export default () => {
     }
 
     function onArrowWidthChange(e){
-        let awidth = {arrowwidth : parseInt(e.target.value)};
-        setToolTip({...toolTip , ...awidth});
+        if(e.target.value > 0 && e.target.value < 9){
+            let awidth = {arrowwidth : parseInt(e.target.value)};
+            setToolTip({...toolTip , ...awidth});
+        }
     }
 
     function onArrowHeightChange(e){
