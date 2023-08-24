@@ -25,8 +25,10 @@ export default () => {
     }
 
     function onPaddingChange(e){
-        let padding = {padding : parseInt(e.target.value)};
-        setToolTip({...toolTip , ...padding});
+        if(e.target.value > -1 && e.target.value < 76){
+            let padding = {padding : parseInt(e.target.value)};
+            setToolTip({...toolTip , ...padding});
+        }
     }
 
     function onTextColourChange(e){
@@ -40,13 +42,17 @@ export default () => {
     }
 
     function onCradiusChange(e){
-        let radius = {cradius : parseInt(e.target.value)};
-        setToolTip({...toolTip , ...radius});
+        if(e.target.value > 0 && e.target.value < 26){
+            let radius = {cradius : parseInt(e.target.value)};
+            setToolTip({...toolTip , ...radius});
+        }
     }
 
     function onTooltipWidthChange(e){
-        let width = {tooltipwidth : parseInt(e.target.value)};
-        setToolTip({...toolTip , ...width});
+        if(e.target.value > 70 && e.target.value < 270){
+            let width = {tooltipwidth : parseInt(e.target.value)};
+            setToolTip({...toolTip , ...width});
+        }
     }
 
     function onArrowWidthChange(e){
