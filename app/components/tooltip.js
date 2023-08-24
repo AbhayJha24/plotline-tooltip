@@ -19,24 +19,29 @@ export default function Tooltip({toolTip}) {
         tooltipelement.current.style.width = `${toolTip.tooltipwidth}px`;
 
         if(toolTip.button === "Button 1"){
-            tooltipelement.current.style.top = '4.5em';
-            tooltipelement.current.style.left = '-2.2em';
+            tooltipelement.current.style.top = '70px';
+            tooltipelement.current.style.left = '-35px';
+            tooltipelement.current.style.transform = 'rotateZ(0deg)';
         }
         else if(toolTip.button === "Button 2"){
-            tooltipelement.current.style.top = '4.5em';
-            tooltipelement.current.style.left = '7.5em';
+            tooltipelement.current.style.top = '70px';
+            tooltipelement.current.style.left = '122px';
+            tooltipelement.current.style.transform = 'rotateZ(0deg)';
         }
         else if(toolTip.button === "Button 3"){
-            tooltipelement.current.style.top = '19.5em';
-            tooltipelement.current.style.left = '2.6em';
+            tooltipelement.current.style.top = '315px';
+            tooltipelement.current.style.left = '42px';
+            tooltipelement.current.style.transform = 'rotateZ(0deg)';
         }
         else if(toolTip.button === "Button 4"){
-            tooltipelement.current.style.top = '28em';
-            tooltipelement.current.style.left = '-2.3em';
+            tooltipelement.current.style.top = '450px';
+            tooltipelement.current.style.left = '-37px';
+            tooltipelement.current.style.transform = 'rotateZ(180deg)';
         }
         else if(toolTip.button === "Button 5"){
-            tooltipelement.current.style.top = '28em';
-            tooltipelement.current.style.left = '7.7em';
+            tooltipelement.current.style.top = '450px';
+            tooltipelement.current.style.left = '121px';
+            tooltipelement.current.style.transform = 'rotateZ(180deg)';
         }
       }
     }, [toolTip])
@@ -44,7 +49,7 @@ export default function Tooltip({toolTip}) {
     
     return (
         <main className={style.tooltip} ref={tooltipelement}>
-            {toolTip.tooltiptext}
+            <p className={style.text}>{toolTip.tooltiptext}</p>
         </main>
     );
 }

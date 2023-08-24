@@ -11,6 +11,10 @@
     top: 19.5em;
 }
 
+.text{
+    transform: inherit;
+}
+
 .tooltip::after{
     position: absolute;
     content: " ";
