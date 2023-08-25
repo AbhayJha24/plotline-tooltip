@@ -8,7 +8,7 @@
 
 ### This website is responsive upto phones having 300px horizontal screen width
 
-> ## The website has been deployed to Vercel
+## The website has been deployed to Vercel
 
 ```
 https://plotline-tooltip.vercel.app
