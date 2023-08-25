@@ -7,13 +7,15 @@
     padding: 4rem;
 }
 
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 500px) and (min-width: 375px){
     .main{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8rem;
-        flex-wrap: wrap;
         padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main{
+        padding: 0.5rem;
     }
 }
