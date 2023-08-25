@@ -8,13 +8,13 @@
 
 ### This website is responsive upto phones having 300px horizontal screen width
 
-## The website has been deployed to Vercel
+# The website has been deployed to Vercel
 
 ```
 https://plotline-tooltip.vercel.app
 ```
 
-## Some constraints include
+# Some constraints include
 
 ### The font size has a maximum value of 30 and can have also lower maximum values which depends on the element's width
 
