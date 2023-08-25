@@ -21,18 +21,30 @@ export default function Tooltip({toolTip}) {
 
         if(toolTip.button === "Button 1"){
             tooltipelement.current.style.top = '70px';
-            tooltipelement.current.style.left = '-35px';
+            tooltipelement.current.style.left = '22px';
+            tooltipelement.current.style.margin = 'initial';
             tooltipelement.current.style.transform = 'rotateZ(0deg)';
+            if(beakelement){
+                beakelement.current.style.left = '28px';
+            }
         }
         else if(toolTip.button === "Button 2"){
             tooltipelement.current.style.top = '70px';
-            tooltipelement.current.style.left = '122px';
+            tooltipelement.current.style.left = '-52px';
             tooltipelement.current.style.transform = 'rotateZ(0deg)';
+            if(beakelement){
+                beakelement.current.style.left = '28px';
+            }
         }
         else if(toolTip.button === "Button 3"){
             tooltipelement.current.style.top = '315px';
-            tooltipelement.current.style.left = '42px';
+            tooltipelement.current.style.left = '0px';
+            tooltipelement.current.style.right = '0px';
+            tooltipelement.current.style.margin = 'auto';
             tooltipelement.current.style.transform = 'rotateZ(0deg)';
+            if(beakelement){
+                beakelement.current.style.left = 'initial';
+            }
         }
         else if(toolTip.button === "Button 4"){
             tooltipelement.current.style.top = '450px';

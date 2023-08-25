@@ -20,8 +20,10 @@ export default () => {
     }
 
     function onTextSizeChange(e){
-        let size = {textsize : parseInt(e.target.value)};
-        setToolTip({...toolTip , ...size});
+        if(e.target.value > (toolTip.tooltipwidth*(9/115)) && e.target.value < (toolTip.tooltipwidth*(18/70))){
+            let size = {textsize : parseInt(e.target.value)};
+            setToolTip({...toolTip , ...size});
+        }
     }
 
     function onPaddingChange(e){
@@ -49,14 +51,14 @@ export default () => {
     }
 
     function onTooltipWidthChange(e){
-        if(e.target.value > 70 && e.target.value < 270){
+        if(e.target.value > 70 && e.target.value < 231){
             let width = {tooltipwidth : parseInt(e.target.value)};
             setToolTip({...toolTip , ...width});
         }
     }
 
     function onArrowWidthChange(e){
-        if(e.target.value > 0 && e.target.value < 9){
+        if(e.target.value > 0 && e.target.value < toolTip.tooltipwidth*(4/230)){
             let awidth = {arrowwidth : parseInt(e.target.value)};
             setToolTip({...toolTip , ...awidth});
         }
