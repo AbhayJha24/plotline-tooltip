@@ -18,7 +18,7 @@
 .beak{
     position: absolute;
     content: " ";
-    top: -19px;
+    top: -15px;
     border: 10px solid;
     border-color:  transparent transparent #212121 transparent;
 }

@@ -21,40 +21,63 @@ export default function Tooltip({toolTip}) {
 
         if(toolTip.button === "Button 1"){
             tooltipelement.current.style.top = '70px';
+            tooltipelement.current.style.bottom = 'initial';
             tooltipelement.current.style.left = '22px';
+            tooltipelement.current.style.right = 'initial';
             tooltipelement.current.style.margin = 'initial';
             tooltipelement.current.style.transform = 'rotateZ(0deg)';
             if(beakelement){
                 beakelement.current.style.left = '28px';
+                beakelement.current.style.right = 'initial';
             }
         }
         else if(toolTip.button === "Button 2"){
             tooltipelement.current.style.top = '70px';
-            tooltipelement.current.style.left = '-52px';
+            tooltipelement.current.style.bottom = 'initial';
+            tooltipelement.current.style.left = 'initial';
+            tooltipelement.current.style.right = '22px';
+            tooltipelement.current.style.margin = 'initial';
             tooltipelement.current.style.transform = 'rotateZ(0deg)';
             if(beakelement){
-                beakelement.current.style.left = '28px';
+                beakelement.current.style.left = 'initial';
+                beakelement.current.style.right = '28px';
             }
         }
         else if(toolTip.button === "Button 3"){
             tooltipelement.current.style.top = '315px';
+            tooltipelement.current.style.bottom = 'initial';
             tooltipelement.current.style.left = '0px';
             tooltipelement.current.style.right = '0px';
             tooltipelement.current.style.margin = 'auto';
             tooltipelement.current.style.transform = 'rotateZ(0deg)';
             if(beakelement){
                 beakelement.current.style.left = 'initial';
+                beakelement.current.style.right = 'initial';
             }
         }
         else if(toolTip.button === "Button 4"){
-            tooltipelement.current.style.top = '450px';
-            tooltipelement.current.style.left = '-37px';
+            tooltipelement.current.style.top = 'initial';
+            tooltipelement.current.style.bottom = '70px';
+            tooltipelement.current.style.left = '22px';
+            tooltipelement.current.style.right = 'initial';
+            tooltipelement.current.style.margin = 'initial';
             tooltipelement.current.style.transform = 'rotateZ(180deg)';
+            if(beakelement){
+                beakelement.current.style.left = 'initial';
+                beakelement.current.style.right = '28px';
+            }
         }
         else if(toolTip.button === "Button 5"){
-            tooltipelement.current.style.top = '450px';
-            tooltipelement.current.style.left = '121px';
+            tooltipelement.current.style.top = 'initial';
+            tooltipelement.current.style.bottom = '70px';
+            tooltipelement.current.style.left = 'initial';
+            tooltipelement.current.style.right = '22px';
+            tooltipelement.current.style.margin = 'initial';
             tooltipelement.current.style.transform = 'rotateZ(180deg)';
+            if(beakelement){
+                beakelement.current.style.left = '28px';
+                beakelement.current.style.right = 'initial';
+            }
         }
       }
 

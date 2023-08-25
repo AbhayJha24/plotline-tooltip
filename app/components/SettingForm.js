@@ -1,7 +1,6 @@
 'use client'
 
 import styles from "../css/form.module.css";
-import { useState } from "react";
 
 export default function SettingForm({toolTip, TextChange, ButtonChange, TextSizeChange, PaddingChange, TextColourChange, BgcolourChange, CradiusChange, TooltipWidthChange, ArrowWidthChange, ArrowHeightChange}) {
 
