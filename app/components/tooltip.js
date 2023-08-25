@@ -82,8 +82,8 @@ export default function Tooltip({toolTip}) {
       }
 
       if(beakelement){
-        beakelement.current.style.transform = `scale(${toolTip.arrowwidth},${toolTip.arrowheight})`;
-        beakelement.current.style.top = `${-20-(10*(toolTip.arrowheight-1))}px`;
+        beakelement.current.style.transform = `scale(${toolTip.arrowwidth/10},${toolTip.arrowheight/10})`;
+        beakelement.current.style.top = `${-20-((toolTip.arrowheight-10))}px`;
         if(toolTip.bgcolour !== ""){
             beakelement.current.style.borderColor = `transparent transparent ${toolTip.bgcolour} transparent`;
         }

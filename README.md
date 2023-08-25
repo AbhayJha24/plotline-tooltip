@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Documentation
 
-## Getting Started
+### The form on the left has options for changing values of different parameters of the tooltip
 
-First, run the development server:
+### A live preview of the tooltip is rendered in the mobile shown on the right or bottom depending on the device which you are using
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+###  Some constraints have been put on all parameters on the left side form so that user cannot enter arbitiary values or values for which the design doesn't look good
+
+### This website is responsive upto phones having 300px horizontal screen width
+
+> ## The website has been deployed to Vercel
+
+```
+https://plotline-tooltip.vercel.app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Some constraints include
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### The font size has a maximum value of 30 and can have also lower maximum values which depends on the element's width
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### The width has a maximum value of 230 and a minimum limit of 70
 
-## Learn More
+### Corner radius has a max limit of 25 and a minimum value of 0
 
-To learn more about Next.js, take a look at the following resources:
+### Arrow width has a maximum value of 24 and a min value of 1. Arrow width also depends on the current width of the element
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Arrow height has a maximum value of 30 and a minimum value of 5
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### The tooltip text the limited to first 25 characters to avoid too long text
 
-## Deploy on Vercel
+### Padding is limited to a maximum value of 25 and a minimum value of 0
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### The colours don't have any limitations as such but specifying a wrong hex colour code will fallback to the default one i.e. black (Basic colour names suported like blue green etc also work)

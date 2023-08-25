@@ -7,29 +7,23 @@ import { useState, useEffect } from "react";
 
 export default () => {
 
-    const [toolTip, setToolTip] = useState({tooltiptext: "Tooltip text goes here", button: "Button 3", textsize: 16, padding: 10, textcolour: "", bgcolour: "", cradius: 0, tooltipwidth: 190,  arrowwidth: 1, arrowheight: 1});
+    const [toolTip, setToolTip] = useState({tooltiptext: "Tooltip text goes here", button: "Button 3", textsize: 16, padding: 10, textcolour: "", bgcolour: "", cradius: 0, tooltipwidth: 190,  arrowwidth: 10, arrowheight: 10});
 
     useEffect(() => {
-      if ((toolTip.textsize > (toolTip.tooltipwidth*(18/70))) || toolTip.textsize >= 30) {
-        let usize = {textsize: 0};
-        if((toolTip.tooltipwidth*(18/70)) < 30){
-            if((toolTip.tooltipwidth*(18/70)) > 0){
-                usize ={textsize : (toolTip.tooltipwidth*(18/70))};
-            }
-            else{
-                usize ={textsize : 1};
-            }
-        }
-        else{
-            usize ={textsize : 30}
-        }
+      if (toolTip.textsize > (toolTip.tooltipwidth*(18/70))) {
+        let usize ={textsize : (toolTip.tooltipwidth*(18/70))};
         setToolTip({...toolTip, ...usize});
       }
 
-      if(toolTip.arrowwidth > toolTip.tooltipwidth*(3/230)){
-        let rcaw = {arrowwidth: toolTip.tooltipwidth*(3/230)};
-        if(toolTip.tooltipwidth*(3/230) > 0){
-            rcaw = {arrowwidth: toolTip.tooltipwidth*(3/230)};
+      if(toolTip.textsize > 30){
+        let usize ={textsize : 30};
+        setToolTip({...toolTip, ...usize});
+      }
+
+      if(toolTip.arrowwidth > toolTip.tooltipwidth*(3/23)){
+        let rcaw = {arrowwidth: toolTip.tooltipwidth*(3/23)};
+        if(toolTip.tooltipwidth*(3/23) > 0){
+            rcaw = {arrowwidth: toolTip.tooltipwidth*(3/23)};
         }
         else{
             rcaw = {arrowwidth: 1};
@@ -61,7 +55,7 @@ export default () => {
 
     function onTextSizeChange(e){
         if((e.target.value > (toolTip.tooltipwidth*(9/115)) && e.target.value < (toolTip.tooltipwidth*(18/70))) || e.target.value < 30){
-            let size = {textsize : parseInt(e.target.value)};
+            let size = {textsize : parseFloat(e.target.value)};
             setToolTip({...toolTip , ...size});
         }
     }
@@ -91,22 +85,22 @@ export default () => {
     }
 
     function onTooltipWidthChange(e){
-        if(e.target.value > 70 && e.target.value < 231){
+        if(e.target.value > 69 && e.target.value < 231){
             let width = {tooltipwidth : parseInt(e.target.value)};
             setToolTip({...toolTip , ...width});
         }
     }
 
     function onArrowWidthChange(e){
-        if(e.target.value > 0 && e.target.value < toolTip.tooltipwidth*(3/230)){
-            let awidth = {arrowwidth : parseInt(e.target.value)};
+        if(e.target.value > 4 && e.target.value < toolTip.tooltipwidth*(3/23)){
+            let awidth = {arrowwidth : parseFloat(e.target.value)};
             setToolTip({...toolTip , ...awidth});
         }
     }
 
     function onArrowHeightChange(e){
-        if(e.target.value > 0 && e.target.value < 5){
-            let aheight = {arrowheight : parseInt(e.target.value)};
+        if(e.target.value > 4 && e.target.value < 31){
+            let aheight = {arrowheight : parseFloat(e.target.value)};
             setToolTip({...toolTip , ...aheight});
         }
     }
