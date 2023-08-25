@@ -16,39 +16,39 @@ export default function SettingForm({toolTip, TextChange, ButtonChange, TextSize
                 <option value="Button 5">Button 5</option>
             </select>
             <h1 className={styles.headings}>Tooltip text</h1>
-            <input type="text" name="" id="" placeholder="Input" className={styles.field2} value={toolTip.tooltiptext} onChange={TextChange} />
+            <input type="text" name="" id="" placeholder="Tooltip text" className={styles.field2}  onChange={TextChange} />
             <section className={styles.twoInput}>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Text Size</h1>
-                <input type="number" name="" id="" placeholder="Input" className={styles.field2} value={toolTip.textsize} onChange={TextSizeChange} />
+                <input type="number" name="" id="" placeholder="Range [1-30] default 16" className={styles.field2}  onChange={TextSizeChange} />
                 </div>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Padding</h1>
-                <input type="number" name="" id="" placeholder="Input" className={styles.field2} value={toolTip.padding} onChange={PaddingChange} />
+                <input type="number" name="" id="" placeholder="Range [0-25] default 10" className={styles.field2}  onChange={PaddingChange} />
                 </div>
             </section>
             <h1 className={styles.headings}>Text Colour</h1>
-            <input type="text" name="" id="" placeholder="Eg: blue or #ff0000" className={styles.field2} value={toolTip.textcolour} onChange={TextColourChange} />
+            <input type="text" name="" id="" placeholder="Eg: blue or #ff0000" className={styles.field2}  onChange={TextColourChange} />
             <h1 className={styles.headings}>Background colour</h1>
-            <input type="text" name="" id="" placeholder="Eg: blue or #ff0000" className={styles.field2} value={toolTip.bgcolour} onChange={BgcolourChange} />
+            <input type="text" name="" id="" placeholder="Eg: blue or #ff0000" className={styles.field2}  onChange={BgcolourChange} />
             <section className={styles.twoInput}>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Corner radius</h1>
-                <input type="number" name="" id="" placeholder="Input" className={styles.field2}  value={toolTip.cradius} onChange={CradiusChange} />
+                <input type="number" name="" id="" placeholder="Range [0-25] default 0" className={styles.field2}   onChange={CradiusChange} />
                 </div>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Tooltip width</h1>
-                <input type="number" name="" id="" placeholder="Input" className={styles.field2} value={toolTip.tooltipwidth} onChange={TooltipWidthChange} />
+                <input type="number" name="" id="" placeholder="Range [70-230] default 190" className={styles.field2}  onChange={TooltipWidthChange} />
                 </div>
             </section>
             <section className={styles.twoInput}>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Arrow width</h1>
-                <input type="number" name="" id="" placeholder="Input" className={styles.field2} value={toolTip.arrowwidth} onChange={ArrowWidthChange} />
+                <input type="number" name="" id="" placeholder="Range [5-24] default 10" className={styles.field2}  onChange={ArrowWidthChange} />
                 </div>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Arrow height</h1>
-                <input type="number" name="" id="" placeholder="Input" className={styles.field2} value={toolTip.arrowheight} onChange={ArrowHeightChange} />
+                <input type="number" name="" id="" placeholder="Range [5-30] default 10" className={styles.field2}  onChange={ArrowHeightChange} />
                 </div>
             </section>
         </main>

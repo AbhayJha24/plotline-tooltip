@@ -22,7 +22,7 @@ https://plotline-tooltip.vercel.app
 
 ### Corner radius has a max limit of 25 and a minimum value of 0
 
-### Arrow width has a maximum value of 24 and a min value of 1. Arrow width also depends on the current width of the element
+### Arrow width has a maximum value of 24 and a min value of 5. Arrow width also depends on the current width of the element
 
 ### Arrow height has a maximum value of 30 and a minimum value of 5
 
