@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 
 export default () => {
 
+    // Declaring state variable tooltip and using use effect function to check for the constraints for the values entered by the user through the form
+
     const [toolTip, setToolTip] = useState({tooltiptext: "Tooltip text goes here", button: "Button 3", textsize: 16, padding: 10, textcolour: "", bgcolour: "", cradius: 0, tooltipwidth: 190,  arrowwidth: 10, arrowheight: 10});
 
     useEffect(() => {
@@ -41,7 +43,9 @@ export default () => {
         setToolTip({...toolTip, ...rcaw});
       }
     }, [toolTip])
-    
+
+
+    // Functionalities for updating state variables based on user input
 
     function onTextChange(e){
         let text = {tooltiptext : (e.target.value).substr(0,25)};
@@ -104,6 +108,8 @@ export default () => {
             setToolTip({...toolTip , ...aheight});
         }
     }
+
+    // Main JSX containing left side form component and right side live tooltip render component
 
     return (
         <main className={styles.main}>

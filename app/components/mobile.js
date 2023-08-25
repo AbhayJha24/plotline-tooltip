@@ -12,6 +12,8 @@ export default function Mobile({toolTip}) {
 
                 <Tooltip toolTip={toolTip} />
 
+                {/* Mobile Container */}
+
                 <div className={styles.buttonContainer}>
                 <button className={styles.buttons}>Button 1</button>
                 <button className={styles.buttons}>Button 2</button>

@@ -7,6 +7,8 @@
     padding: 4rem;
 }
 
+/* Media queries for mobile responsiveness */
+
 
 @media screen and (max-width: 500px) and (min-width: 375px){
     .main{

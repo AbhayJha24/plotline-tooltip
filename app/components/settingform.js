@@ -4,6 +4,8 @@ import styles from "../css/form.module.css";
 
 export default function SettingForm({toolTip, TextChange, ButtonChange, TextSizeChange, PaddingChange, TextColourChange, BgcolourChange, CradiusChange, TooltipWidthChange, ArrowWidthChange, ArrowHeightChange}) {
 
+    // Basic Form UI for the user to enter information
+
     return (
         <main className={styles.form}>
             <h1 className={styles.headings}>Target Element</h1>

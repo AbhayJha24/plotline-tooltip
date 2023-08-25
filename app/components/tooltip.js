@@ -9,6 +9,8 @@ export default function Tooltip({toolTip}) {
     const tooltipelement = useRef(null);
     const beakelement = useRef(null);
 
+    // Use Effect Functionality to render the updated tooltip component in realtime
+
     useEffect(() => {
       if(tooltipelement){
         tooltipelement.current.style.fontSize = `${toolTip.textsize}px`;
@@ -92,7 +94,8 @@ export default function Tooltip({toolTip}) {
         }
       }
     }, [toolTip])
-    
+
+    // Tooltip Component JSX
     
     return (
         <main className={style.tooltip} ref={tooltipelement}>
