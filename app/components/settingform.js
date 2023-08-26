@@ -22,11 +22,11 @@ export default function SettingForm({toolTip, TextChange, ButtonChange, TextSize
             <section className={styles.twoInput}>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Text Size</h1>
-                <input type="number" name="" id="" placeholder="Range [1-30] default 16" className={styles.field2}  onChange={TextSizeChange} />
+                <input type="number" name="" id="" placeholder="[1-30] def. 16" className={styles.field2}  onChange={TextSizeChange} />
                 </div>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Padding</h1>
-                <input type="number" name="" id="" placeholder="Range [0-25] default 10" className={styles.field2}  onChange={PaddingChange} />
+                <input type="number" name="" id="" placeholder="[0-25] def. 10" className={styles.field2}  onChange={PaddingChange} />
                 </div>
             </section>
             <h1 className={styles.headings}>Text Colour</h1>
@@ -36,21 +36,21 @@ export default function SettingForm({toolTip, TextChange, ButtonChange, TextSize
             <section className={styles.twoInput}>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Corner radius</h1>
-                <input type="number" name="" id="" placeholder="Range [0-25] default 0" className={styles.field2}   onChange={CradiusChange} />
+                <input type="number" name="" id="" placeholder="[0-25] def. 0" className={styles.field2}   onChange={CradiusChange} />
                 </div>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Tooltip width</h1>
-                <input type="number" name="" id="" placeholder="Range [70-230] default 190" className={styles.field2}  onChange={TooltipWidthChange} />
+                <input type="number" name="" id="" placeholder="[70-230] def. 190" className={styles.field2}  onChange={TooltipWidthChange} />
                 </div>
             </section>
             <section className={styles.twoInput}>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Arrow width</h1>
-                <input type="number" name="" id="" placeholder="Range [5-24] default 10" className={styles.field2}  onChange={ArrowWidthChange} />
+                <input type="number" name="" id="" placeholder="[5-24] def. 10" className={styles.field2}  onChange={ArrowWidthChange} />
                 </div>
                 <div className={styles.box}>
                 <h1 className={styles.headings}>Arrow height</h1>
-                <input type="number" name="" id="" placeholder="Range [5-30] default 10" className={styles.field2}  onChange={ArrowHeightChange} />
+                <input type="number" name="" id="" placeholder="[5-30] def. 10" className={styles.field2}  onChange={ArrowHeightChange} />
                 </div>
             </section>
         </main>
